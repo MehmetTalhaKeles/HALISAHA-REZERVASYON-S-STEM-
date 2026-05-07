@@ -112,13 +112,20 @@ if ($islem == 'saha_listele') {
     $sonuc = mysqli_query($baglanti, "SELECT * FROM sahalar ORDER BY id DESC");
     echo "<table class='data-table'><tr><th>ID</th><th>Ad</th><th>Konum</th><th>Tür</th><th>Kapasite</th><th>Ücret</th><th>Durum</th><th>İşlem</th></tr>";
     while ($r = mysqli_fetch_assoc($sonuc)) {
-        $adi_js = addslashes($r['saha_adi']);
+        $rid     = $r['id'];
+        $adi_js  = addslashes($r['saha_adi']);
         $konum_js = addslashes($r['konum']);
-        echo "<tr><td>{$r['id']}</td><td>{$r['saha_adi']}</td><td>{$r['konum']}</td><td>{$r['tur']}</td><td>{$r['kapasite']}</td><td>{$r['saatlik_ucret']} TL</td><td>{$r['durum']}</td>
-        <td>
-          <button onclick='sahaDuzenle({$r[\"id\"]},\"{$adi_js}\",\"{$konum_js}\",\"{$r[\"tur\"]}\",{$r[\"kapasite\"]},{$r[\"saatlik_ucret\"]})' class='btn-edit-sm'>✏️ Düzenle</button>
-          <button onclick='sahaSil({$r[\"id\"]})' class='btn-danger-sm'>Sil</button>
-        </td></tr>";
+        $rtur    = addslashes($r['tur']);
+        $rkap    = $r['kapasite'];
+        $rucret  = $r['saatlik_ucret'];
+        echo "<tr>
+          <td>{$r['id']}</td><td>{$r['saha_adi']}</td><td>{$r['konum']}</td>
+          <td>{$r['tur']}</td><td>{$r['kapasite']}</td><td>{$r['saatlik_ucret']} TL</td><td>{$r['durum']}</td>
+          <td>
+            <button onclick='sahaDuzenle($rid,\"$adi_js\",\"$konum_js\",\"$rtur\",$rkap,$rucret)' class='btn-edit-sm'>✏️ Düzenle</button>
+            <button onclick='sahaSil($rid)' class='btn-danger-sm'>Sil</button>
+          </td>
+        </tr>";
     }
     echo "</table>";
 }
@@ -301,13 +308,20 @@ if ($islem == 'kampanya_listele') {
     $sonuc = mysqli_query($baglanti, "SELECT * FROM kampanyalar ORDER BY id DESC");
     echo "<table class='data-table'><tr><th>Kampanya</th><th>Açıklama</th><th>İndirim</th><th>Başlangıç</th><th>Bitiş</th><th>Durum</th><th>İşlem</th></tr>";
     while ($r = mysqli_fetch_assoc($sonuc)) {
-        $kadi_js = addslashes($r['kampanya_adi']);
+        $kid    = $r['id'];
+        $kadi_js  = addslashes($r['kampanya_adi']);
         $kacik_js = addslashes($r['aciklama']);
-        echo "<tr><td>{$r['kampanya_adi']}</td><td>{$r['aciklama']}</td><td>%{$r['indirim_orani']}</td><td>{$r['baslangic_tarihi']}</td><td>{$r['bitis_tarihi']}</td><td>{$r['durum']}</td>
-        <td>
-          <button onclick='kampanyaDuzenle({$r[\"id\"]},\"{$kadi_js}\",\"{$kacik_js}\",{$r[\"indirim_orani\"]},\"{$r[\"baslangic_tarihi\"]}\",\"{$r[\"bitis_tarihi\"]}\")' class='btn-edit-sm'>✏️ Düzenle</button>
-          <button onclick='kampanyaSil({$r[\"id\"]})' class='btn-danger-sm'>Sil</button>
-        </td></tr>";
+        $koran  = $r['indirim_orani'];
+        $kbas   = $r['baslangic_tarihi'];
+        $kbit   = $r['bitis_tarihi'];
+        echo "<tr>
+          <td>{$r['kampanya_adi']}</td><td>{$r['aciklama']}</td><td>%{$r['indirim_orani']}</td>
+          <td>{$r['baslangic_tarihi']}</td><td>{$r['bitis_tarihi']}</td><td>{$r['durum']}</td>
+          <td>
+            <button onclick='kampanyaDuzenle($kid,\"$kadi_js\",\"$kacik_js\",$koran,\"$kbas\",\"$kbit\")' class='btn-edit-sm'>✏️ Düzenle</button>
+            <button onclick='kampanyaSil($kid)' class='btn-danger-sm'>Sil</button>
+          </td>
+        </tr>";
     }
     echo "</table>";
 }
