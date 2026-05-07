@@ -1,0 +1,5 @@
+*.pdf
+pdf_content.txt
+pdf_extract_log.txt
+.git/
+
