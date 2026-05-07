@@ -1,0 +1,235 @@
+2025-2026 Bahar Dönemi
+Proje Bilgilendirme Dokümanı -16/03/2026
+I-Dersler
+• Veritabanı Sistemleri (CPE210)
+• İnternet Tabanlı Programlama (CPE212)
+II-İletişim Bilgileri
+Derslerin asistanları
+1. Veritabanı Sistemleri
+o Kadriye Karadeniz (kadriyekaradeniz@karabuk.edu.tr)
+o Simge Kaplan (simgekaplan@karabuk.edu.tr)
+2. İnternet Tabanlı Programlama
+o Melek Şentürk (meleksenturk@karabuk.edu.tr)
+III-Proje Takvimi
+1. Proje Ekibi Oluşturma
+a. Öğrencilerin grup oluşturması (17-22/3/26)
+b. Grubun onaylanması ve Grup oluşturmayan öğrencilerin gruplanması (23-
+25/3/26)
+2. Proje Konusu Belirleme
+a. Öğrencilerin senaryoyu önermesi (26/3/2026-31/3/26)
+b. Hocanın onaylaması (1-3/4/26)
+c. Proje önerisi onaylanmayanların 2. Önerisi (4-5/4/26)
+d. Hocanın 2. Öneriyi onaylaması (6-7/4/2026)
+3. Proje Geliştirme (3/4/26-10/5/26)
+4. Proje Teslimi (En son Teslim: 10/5/26)
+5. Proje Sunumu (11-22/5/26)
+IV-Açıklamalar
+Genel
+Bu dönem Veritabanı Sistemleri ve Internet Tabanlı Programlama derslerinde ortak
+proje verilmesi amaçlanmıştır. Bu çerçevede:
+• Veritabanı Sistemleri dersinde Veritabanı Tasarımı ve istenilen SQL sorgularının
+çalıştırılması sağlanacaktır.
+• Internet Tabanlı Programlama dersinde ise arayüzün geliştirilmesi ve
+veritabanından verilerin alınıp gösterilmesi sağlanacaktır.
+1. Proje Ekibi Oluşturma
+• Her grup, https://project.menemencioglu.info adresindeki Proje Paneli aracılığıyla bir
+üye (sorumlu üye) tarafından oluşturulacaktır.
+o Kullanıcı bilgileri öğrencilere öğrenci e-posta adresleri üzerinden gönderilecektir
+(örnek 1111111111@ogrenci.karabuk.edu.tr -> 1111111111 -> Zxc!’345£)
+• Gruplar 3 veya 4 kişi olabilecektir.
+• Grup üyeleri şu şekilde olabilir
+o Tamamı iki dersi alanlar (Tip A)
+o İki dersten karma üyeler bulunması (Tip B)
+o Tamamı sadece tek bir dersi alanlar (Tip C (Sadece DBS) ve Tip D (Sadece IBP))
+2. Proje Konusu Belirleme
+• Her grup ilgili dersin proje gereksinimlerini göz önüne alarak:
+o IBP için bir konu önerir. (Tip D)
+o DBS için senaryo içeren bir konu önerir. (Tip A, B ve C)
+▪ Örnek projedeki gibi olmalıdır.
+▪ En az 7 adet varlık içermelidir.
+• Gruplar birbirinden farklı projeler önermek zorundadır. Aksi takdirde tekrar proje
+önerisi sunmak zorundadır.
+• Daha önce yapılmış, eski yıllara ait projeler kabul edilmeyecektir.
+3. Proje Geliştirme
+• Grup üyelerinin tamamı sadece derslerden birini alıyorsa, sadece o ders için
+istenilenleri gerçekleştirecektir (Tip C veya Tip D).
+• Grup üyelerinin tamamı her iki dersi alıyorsa veya karma bir grupsa, iki dersin
+isteklerini gerçekleştirmek zorundadır (Tip A veya Tip B).
+• İstenilenler için ilgili dersin açıklamalarına bakınız.
+4. Proje Raporunun Teslimi
+• Her bir dersin raporu o dersin özel istekleri dikkate alınarak hazırlanıp belirtilen
+sisteme yüklenecektir.
+• Raporlarda içerilmesi gerekenler:
+o Konu Başlığı
+o Proje Amacı/Açıklanması
+o İlgili ders için raporda olması istenilenler
+o Grup üyelerinin katkı oranları. Örneğin: Öğrenci-1: %75, Öğrenci-2: %75,
+Öğrenci-3: %100. Bu bilgiler sunum aşamasında ve notlandırmada
+kullanılacaktır.
+• Raporu zamanında teslim etmeyenlerin sunum yapmasına müsaade
+edilmeyecektir.
+5. Proje Sunumu
+• Projelerini son teslim tarihinden önce teslim eden öğrenciler sunumlarını ilgili
+asistanlarla görüşerek önceden yapabilirler.
+• Sunuma gruptaki bütün öğrenciler beraber katılmak zorundadır.
+• Sunuma katılanlardan imza alınacaktır.
+• Sunum yapacak öğrencinin belirlenmesindeki kriter:
+o En fazla katkı sağlayan öğrenci sunacaktır. (Eğer bir öğrencinin katkısı
+diğerlerinden %20 daha fazla ise)
+o Aksi takdirde rastgele bir öğrenciye sunum yaptırılacaktır.
+6. Notlandırma kriteri
+• Proje notu hesaplanırken %40 rapor ve %60 sunum olarak değerlendirilecektir.
+• Öğrencilerin her birinin notu aşağıdaki gibi hesaplanacaktır.
+▪ Öğrenci Proje Notu =
+(Rapor Notu * %40 + Sunum Notu * %60) * Öğrenci Katkı Oranı
+o Rapor Notu: İlgili dersin açıklamalarında belirtilmiştir.
+o Sunum Notu: Sunumu yapan öğrencinin aldığı not olacaktır.
+o Öğrenci Katkı Oranı: Raporda belirtilen katkısıdır.
+▪ ÖRNEK Hesaplama
+o Rapor Notu: 80
+o Sunum Notu: 70
+o Öğrenci katkıları (raporda belirtilen)
+▪ 1. Öğrenci: %70
+▪ 2. Öğrenci: %70
+▪ 3. Öğrenci: %80
+▪ 4. Öğrenci: %100
+o Öğrenci Proje Notları
+▪ 1. Öğrenci: (80*%40 + 70*%60) x %70 = 52
+▪ 2. Öğrenci: (80*%40 + 70*%60) x %70 = 52
+▪ 3. Öğrenci: (80*%40 + 70*%60) x %80 = 59
+▪ 4. Öğrenci: (80*%40 + 70*%60) x %100 = 74
+• Proje sunumuna katılmayan öğrencilerin notu 0 olarak girilecektir.
+V-İstekler ve Notlandırma
+A. Veritabanı Sistemleri
+a. Geliştirme: Aşağıdakiler gerçekleştirilecektir
+• Veritabanı Tasarımı (ERD)
+▪ En az 7 adet varlık tanımlanmalı
+▪ Gerekli nitelikler tanımlanmalı
+▪ Gerekli bütün ilişkiler tanımlanmalı
+▪ Mümkünse Üstttip-alttip, yay ve hiyerarşik yapılar kullanılmalı
+▪ ERD Çizimi derste öğretilen Oracle notasyonuna göre yapılmalı
+• ERD yi “table instance chart” kullanarak DB yapılarına eşleştirme
+• SQL DDL deyimlerini yazma yazarak veritabanı yapılarını oluşturma
+• SQL Deyimlerini çalıştırarak fiziksel veritabanını oluşturma
+• Veritabanına veri girilmesi
+• Bilgilere ulaşmak için SQL DML deyimlerinin yazılması
+▪ Alt sorgu içeren bir sorgu
+▪ Join içeren bir sorgu
+▪ Group By içeren bir sorgu
+▪ Tarih fonksiyonu içeren bir sorgu
+▪ Karakter fonksiyonu içeren bir sorgu
+b. Rapor (Veritabanı Dersine ait Özel İstekler)
+• Geliştirme aşamasında belirtilenlerin tamamı raporda açıklamalarıyla
+beraber yer alacaktır.
+• Projenin raporu hazırlanarak OYS sistemine yüklenecektir.
+c. Sunum
+• ERD diyagramını açıklanması yapılacaktır.
+• SQL Sorguları açıklanacak ve çalıştırılıp sonuçları gösterilecektir.
+▪ Grup üyeleri sadece Veritabanı Sistemleri dersini alıyorsa: SQL DML
+sorgularını APEX ortamında çalıştırarak göstereceklerdir.
+▪ Grup üyeleri iki ders alanlardan oluşuyorsa, arayüz üzerinde
+sonuçları gösterecektir. Kod üzerinden açıklama istenecektir.
+d. Notlandırma
+• Proje rapor notlandırması aşağıdaki gibi yapılacaktır:
+Rapor Yazımı (10 puan)
+ERD
+▪ Varlıkların Tanımlanması (8 puan)
+▪ Nitelikler tanımlanması (10 puan)
+▪ Gerekli bütün ilişkiler tanımlanacak (15 puan)
+▪ Mümkünse Üstttip-alttip, yay ve hiyerarşik yapılar kullanılacak (7
+puan)
+▪ Normalizasyona uygunluk (5 puan)
+SQL
+▪ Alt sorgu içeren bir sorgu (13 puan)
+▪ Join içeren bir sorgu (13 puan)
+▪ Group By içeren bir sorgu (7 puan)
+▪ Tarih fonksiyonu içeren bir sorgu (6 puan)
+▪ Karakter fonksiyonu içeren bir sorgu (6 puan)
+e. Örnek Senaryo
+Müşterilerden elektronik ortamda sipariş alan ve bu siparişleri evlerine teslim
+eden bir süpermarket için, aşağıda açıklanan verileri içeren ve ihtiyaçları
+karşılayan bir Kargo Veritabanı tasarlamanız gerekmektedir:
+• Müşteri, ürün, araç, sürücü ve masraf verileri organizasyonun temel
+verileridir. Veritabanında; müşterilerin numarası, adı, soyadı ve adresi;
+ürünlerin kodu, adı, tipi ve fiyatları; teslimat için kullanılan araçların plaka
+numarası, markası ve modeli; araç sürücülerinin sicil numarası, adı, soyadı
+ve yaşı; sürücülerin görevleri sırasındaki masraflarının kodu, adı ve tiplerinin
+tutulması gerekmektedir.
+• Müşteriler siparişlerini elektronik formda verirler. Her siparişi hangi
+müşterinin ne zaman verdiğini bilmek önemlidir. Her siparişe benzersiz bir
+numara atanır. Her siparişte bir veya birçok ürün farklı miktarlarda yer
+alabilir. Bu ürünler bir araya getirilerek bir pakete konur ve üzerine sipariş
+numarası yazılır.
+• Servisler (Seferler), ürün siparişlerini müşteri adreslerine götürmek ve
+teslim etmek üzere organize edilir. Her servis; bir sürücü ve bir araçla
+gerçekleştirilir ve aynı serviste bir veya daha fazla sipariş teslim edilebilir.
+Her servise benzersiz bir numara verilir. Veritabanında; servisin yapıldığı
+tarihin, başlangıç ve bitiş saatlerinin (görev aynı gün başlar ve biter)
+tutulması gerekmektedir. Bir sürücüye aynı gün içinde, aynı veya farklı
+araçla birden fazla servis görevi verilebilir. Bir araç, aynı gün içinde aynı veya
+farklı sürücüler tarafından birçok görevde kullanılabilir.
+• Verilen siparişler, müşteri evdeyse servis sırasında teslim edilir. Hangi
+siparişlerin teslim edildiğini ve teslimatın ne zaman yapıldığını bilmek
+önemlidir.
+• Bir servis sırasında sürücü bazı masraflar yapabilir. Bu masraflar: miktar,
+zaman ve maliyet açısından veritabanında saklanmalıdır. Lastik onarımı ve
+yakıt alımı, masraflara örnek olarak değerlendirilebilir.
+B. Internet Tabanlı Programlama
+a. Geliştirme:
+Proje, sunucu ve istemci tarafı işlevselliği içermektedir. Projeniz aşağıda açıklanan
+temel modülleri içermelidir. Turnitin sistemine bir rapor (PDF) yüklemelisiniz ve PHP,
+CSS ve JS dosyalarının ham kaynak kodlarını da OYS sistemine yüklemelisiniz. Detaylar
+aşağıda açıklanmıştır.
+b. Modüller:
+I) Kullanıcı kimlik doğrulaması
+• JS doğrulaması
+• PHP doğrulaması
+• Şifreleri güvence altına almak için SHA kullanımı
+• MySQL (Oracle, PostgreSQL gibi tercih ettiğiniz DBM) sorgulama
+II) Ana işlev
+• Projenin tanımı*
+• Projenin temel süreci (Ana işlevsellik, örneğin otel odası rezervasyonu vb.)
+i. PHP: rezervasyonu ayırtma, silme veya güncelleme gibi işlevler (temel
+işlevsellik örnekleri yeterlidir),
+ii. JS: işlevselliği elde etmek için doğrulama,
+iii. CSS: sayfaların görünümü,
+iv. MySQL: adım i. işlevselliği, veritabanı ve SQL sorgularını depolamak için
+III) AJAX entegrasyonu
+• Projenize uygun kullanım
+c. Gereksinimler:
+I) Orijinal ham kaynak kodu
+• Tüm dosya yapısı (PHP, HTML, CSS, JS, AJAX)
+• OYS'ye yüklenir
+II) Rapor
+• Tüm talimatları (PHP, HTML, CSS, JS) Word dosyasına ekran görüntüleri
+kopyalayıp yapıştır, script bölümlerinin açıklamaları ile PDF olarak kaydet
+• *Projenizin amacını açıklamanız gerekir
+• Turnitin'e yüklenir
+d. Sunum
+Seçilmiş üye
+• Projelerinin amacını açıklayacaktır
+• Her modülü kullanım senaryoları ve örneklerle açıklayacaktır
+• Eğer istenirse, sunum süresindeki isteğe göre kodu değiştirmeye hazır olur.
+e. Notlandırma
+I) Bileşenlerin modül ağırlıkları:
+Alt
+Modüller Ana
+bölüm
+1) Kullanıcı kimlik doğrulaması 15
+• JS doğrulaması 30
+• PHP doğrulaması 25
+• Şifreleri güvence altına almak için SHA kullanımı 20
+• MySQL sorgulaması 25
+2) Ana İşlev 65
+• Projenin tanımı* 5
+• Proje için temel süreç (Ana işlevsellik, örneğin otel odası
+95
+rezervasyonu gibi)
+i.PHP: rezervasyon yapmak, silmek veya güncellemek gibi işlevler 40
+ii. JS: doğrulamalar, 20
+iii. CSS: sayfaların görünümü, 15
+iv.MySQL: adım i. işlevselliği, temel veritabanı ve SQL sorgularını
+20
+elde etmek için
+3) AJAX entegrasyonu 20
+• Projenize uygun kullanım 100
