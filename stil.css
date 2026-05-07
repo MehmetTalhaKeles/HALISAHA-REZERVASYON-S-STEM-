@@ -1,0 +1,486 @@
+/* stil.css - Halı Saha Rezervasyon Sistemi */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* ==================== AUTH SAYFALARI ==================== */
+.auth-page {
+    background: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: #fff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+    width: 400px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-container a {
+    color: #27ae60;
+}
+
+/* ==================== FORM ELEMANLARI ==================== */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    height: 70px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #27ae60;
+    outline: none;
+}
+
+/* ==================== BUTONLAR ==================== */
+.btn-primary {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
+.btn-success {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-success:hover {
+    background: #219a52;
+}
+
+.btn-danger {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+.btn-danger-sm {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.btn-danger-sm:hover {
+    background: #c0392b;
+}
+
+.btn-warning-sm {
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+/* ==================== LAYOUT: NAVBAR ==================== */
+.navbar {
+    background: #2c3e50;
+    color: #fff;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #27ae60;
+}
+
+.navbar h1 {
+    font-size: 20px;
+}
+
+.navbar .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .user-info span {
+    font-size: 14px;
+}
+
+/* ==================== LAYOUT: SIDEBAR + CONTENT ==================== */
+.main-wrapper {
+    display: flex;
+    min-height: calc(100vh - 55px);
+}
+
+.sidebar {
+    width: 220px;
+    background: #34495e;
+    padding: 15px 0;
+    flex-shrink: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: #bdc3c7;
+    text-decoration: none;
+    padding: 11px 20px;
+    font-size: 14px;
+    border-left: 3px solid transparent;
+    transition: background 0.2s;
+}
+
+.sidebar a:hover {
+    background: #3d566e;
+    color: #fff;
+    border-left-color: #27ae60;
+}
+
+.sidebar a.active {
+    background: #3d566e;
+    color: #fff;
+    border-left-color: #27ae60;
+}
+
+.sidebar .menu-baslik {
+    color: #7f8c8d;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 15px 20px 5px 20px;
+    letter-spacing: 1px;
+    cursor: default;
+    border-left: none;
+}
+
+.sidebar .menu-baslik:hover {
+    background: none;
+    color: #7f8c8d;
+    border-left: none;
+}
+
+.content {
+    flex: 1;
+    padding: 25px;
+    background: #f0f2f5;
+}
+
+/* ==================== İÇERİK BÖLÜMÜ ==================== */
+.section-box {
+    display: none;
+}
+
+.section-box.active {
+    display: block;
+}
+
+.section-box h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 8px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #34495e;
+    font-size: 16px;
+}
+
+/* ==================== TABLOLAR ==================== */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 15px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 13px;
+}
+
+.data-table th {
+    background: #27ae60;
+    color: #fff;
+    font-weight: bold;
+}
+
+.data-table tr:hover {
+    background: #f9f9f9;
+}
+
+/* ==================== DASHBOARD KARTLARI ==================== */
+.dash-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.dash-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    flex: 1;
+    min-width: 160px;
+    text-align: center;
+}
+
+.dash-card .sayi {
+    font-size: 28px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.dash-card .baslik {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+/* ==================== FORM INLINE (Ekleme formları) ==================== */
+.inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.inline-form .form-group {
+    margin-bottom: 0;
+}
+
+.inline-form .form-group label {
+    font-size: 12px;
+}
+
+.inline-form .form-group input,
+.inline-form .form-group select {
+    width: 160px;
+}
+
+.inline-form .form-group textarea {
+    width: 200px;
+    height: 38px;
+}
+
+/* ==================== KAMPANYA & HİZMET KARTLARI (Müşteri) ==================== */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.info-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: 280px;
+}
+
+.info-card h4 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.info-card .badge {
+    display: inline-block;
+    background: #27ae60;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.info-card .badge.indirim {
+    background: #e67e22;
+}
+
+/* ==================== MESAJLAR ==================== */
+.mesaj-kutusu {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.mesaj-basari {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.mesaj-hata {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: #bdc3c7;
+    font-size: 13px;
+}
+
+/* ==================== DÜZENLEME BUTONU ==================== */
+.btn-edit-sm {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.btn-edit-sm:hover {
+    background: #2980b9;
+}
+
+/* ==================== MODAL ==================== */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    min-width: 420px;
+    max-width: 92%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    animation: modalGir 0.2s ease;
+}
+
+.modal-box h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 8px;
+}
+
+@keyframes modalGir {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0);     }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .sidebar a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .inline-form {
+        flex-direction: column;
+    }
+    .inline-form .form-group input,
+    .inline-form .form-group select {
+        width: 100%;
+    }
+}
