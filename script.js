@@ -24,7 +24,6 @@ function formDogrula() {
         return false;
     }
 
-    return true;
 }
 
 // Rezervasyon formu doğrulama
@@ -106,11 +105,11 @@ function rezervasyonEkle() {
         type: "POST",
         url: "islem.php?islem=rezervasyon_ekle",
         data: veri,
-        success: function(yanit) {
+        success: function (yanit) {
             alert(yanit);
             rezervasyonListele();
         },
-        error: function() {
+        error: function () {
             alert("Sunucu hatası! Lütfen tekrar deneyin.");
         }
     });
@@ -122,7 +121,7 @@ function rezervasyonListele() {
 
 function rezervasyonSil(id) {
     if (confirm("Bu rezervasyonu silmek istediğinize emin misiniz?")) {
-        $.get("islem.php?islem=rezervasyon_sil&id=" + id, function(yanit) {
+        $.get("islem.php?islem=rezervasyon_sil&id=" + id, function (yanit) {
             alert(yanit);
             rezervasyonListele();
             adminRezervasyonListele();
@@ -132,7 +131,7 @@ function rezervasyonSil(id) {
 
 function rezervasyonOnayla(id) {
     if (confirm("Bu rezervasyonu onaylamak istiyor musunuz?")) {
-        $.get("islem.php?islem=rezervasyon_onayla&id=" + id, function(yanit) {
+        $.get("islem.php?islem=rezervasyon_onayla&id=" + id, function (yanit) {
             alert(yanit);
             adminRezervasyonListele();
         });
@@ -141,7 +140,7 @@ function rezervasyonOnayla(id) {
 
 function rezervasyonReddet(id) {
     if (confirm("Bu rezervasyonu reddetmek istiyor musunuz?")) {
-        $.get("islem.php?islem=rezervasyon_reddet&id=" + id, function(yanit) {
+        $.get("islem.php?islem=rezervasyon_reddet&id=" + id, function (yanit) {
             alert(yanit);
             adminRezervasyonListele();
         });
@@ -156,7 +155,7 @@ function adminRezervasyonListele() {
 // --- Saha İşlemleri ---
 function sahaEkle() {
     var veri = $("#sahaForm").serialize();
-    $.post("islem.php?islem=saha_ekle", veri, function(yanit) {
+    $.post("islem.php?islem=saha_ekle", veri, function (yanit) {
         alert(yanit);
         sahaListele();
     });
@@ -168,7 +167,7 @@ function sahaListele() {
 
 function sahaSil(id) {
     if (confirm("Bu sahayı silmek?")) {
-        $.get("islem.php?islem=saha_sil&id=" + id, function(yanit) {
+        $.get("islem.php?islem=saha_sil&id=" + id, function (yanit) {
             alert(yanit);
             sahaListele();
         });
@@ -195,19 +194,19 @@ function sahaGuncelle() {
         type: "POST",
         url: "islem.php?islem=saha_guncelle",
         data: veri,
-        success: function(yanit) {
+        success: function (yanit) {
             alert(yanit);
             modalKapat('sahaEditModal');
             sahaListele();
         },
-        error: function() { alert("Güncelleme hatası!"); }
+        error: function () { alert("Güncelleme hatası!"); }
     });
 }
 
 // --- Zaman Dilimi İşlemleri ---
 function zamanDilimiEkle() {
     var veri = $("#zamanDilimiForm").serialize();
-    $.post("islem.php?islem=zaman_dilimi_ekle", veri, function(yanit) {
+    $.post("islem.php?islem=zaman_dilimi_ekle", veri, function (yanit) {
         alert(yanit);
         zamanDilimiListele();
     });
@@ -219,7 +218,7 @@ function zamanDilimiListele() {
 
 function zamanDilimiSil(id) {
     if (confirm("Bu zaman dilimini silmek?")) {
-        $.get("islem.php?islem=zaman_dilimi_sil&id=" + id, function(yanit) {
+        $.get("islem.php?islem=zaman_dilimi_sil&id=" + id, function (yanit) {
             alert(yanit);
             zamanDilimiListele();
         });
@@ -229,7 +228,7 @@ function zamanDilimiSil(id) {
 // --- Personel İşlemleri ---
 function personelEkle() {
     var veri = $("#personelForm").serialize();
-    $.post("islem.php?islem=personel_ekle", veri, function(yanit) {
+    $.post("islem.php?islem=personel_ekle", veri, function (yanit) {
         alert(yanit);
         personelListele();
     });
@@ -241,7 +240,7 @@ function personelListele() {
 
 function personelSil(id) {
     if (confirm("Bu personeli silmek?")) {
-        $.get("islem.php?islem=personel_sil&id=" + id, function(yanit) {
+        $.get("islem.php?islem=personel_sil&id=" + id, function (yanit) {
             alert(yanit);
             personelListele();
         });
@@ -251,7 +250,7 @@ function personelSil(id) {
 // --- Personel Çalışma İşlemleri ---
 function personelCalismaEkle() {
     var veri = $("#personelCalismaForm").serialize();
-    $.post("islem.php?islem=personel_calisma_ekle", veri, function(yanit) {
+    $.post("islem.php?islem=personel_calisma_ekle", veri, function (yanit) {
         alert(yanit);
         personelCalismaListele();
     });
@@ -263,7 +262,7 @@ function personelCalismaListele() {
 
 function personelCalismaSil(id) {
     if (confirm("Bu kaydı silmek?")) {
-        $.get("islem.php?islem=personel_calisma_sil&id=" + id, function(yanit) {
+        $.get("islem.php?islem=personel_calisma_sil&id=" + id, function (yanit) {
             alert(yanit);
             personelCalismaListele();
         });
@@ -273,7 +272,7 @@ function personelCalismaSil(id) {
 // --- Hizmet İşlemleri ---
 function hizmetEkle() {
     var veri = $("#hizmetForm").serialize();
-    $.post("islem.php?islem=hizmet_ekle", veri, function(yanit) {
+    $.post("islem.php?islem=hizmet_ekle", veri, function (yanit) {
         alert(yanit);
         hizmetListele();
     });
@@ -285,7 +284,7 @@ function hizmetListele() {
 
 function hizmetSil(id) {
     if (confirm("Bu hizmeti silmek?")) {
-        $.get("islem.php?islem=hizmet_sil&id=" + id, function(yanit) {
+        $.get("islem.php?islem=hizmet_sil&id=" + id, function (yanit) {
             alert(yanit);
             hizmetListele();
         });
@@ -300,7 +299,7 @@ function musteriHizmetListele() {
 // --- Maç Organizasyonu İşlemleri ---
 function macEkle() {
     var veri = $("#macForm").serialize();
-    $.post("islem.php?islem=mac_ekle", veri, function(yanit) {
+    $.post("islem.php?islem=mac_ekle", veri, function (yanit) {
         alert(yanit);
         macListele();
     });
@@ -312,7 +311,7 @@ function macListele() {
 
 function macSil(id) {
     if (confirm("Bu organizasyonu silmek?")) {
-        $.get("islem.php?islem=mac_sil&id=" + id, function(yanit) {
+        $.get("islem.php?islem=mac_sil&id=" + id, function (yanit) {
             alert(yanit);
             macListele();
         });
@@ -327,7 +326,7 @@ function musteriMacListele() {
 // --- Kampanya İşlemleri ---
 function kampanyaEkle() {
     var veri = $("#kampanyaForm").serialize();
-    $.post("islem.php?islem=kampanya_ekle", veri, function(yanit) {
+    $.post("islem.php?islem=kampanya_ekle", veri, function (yanit) {
         alert(yanit);
         kampanyaListele();
     });
@@ -339,7 +338,7 @@ function kampanyaListele() {
 
 function kampanyaSil(id) {
     if (confirm("Bu kampanyayı silmek?")) {
-        $.get("islem.php?islem=kampanya_sil&id=" + id, function(yanit) {
+        $.get("islem.php?islem=kampanya_sil&id=" + id, function (yanit) {
             alert(yanit);
             kampanyaListele();
         });
@@ -363,12 +362,12 @@ function kampanyaGuncelle() {
         type: "POST",
         url: "islem.php?islem=kampanya_guncelle",
         data: veri,
-        success: function(yanit) {
+        success: function (yanit) {
             alert(yanit);
             modalKapat('kampanyaEditModal');
             kampanyaListele();
         },
-        error: function() { alert("Güncelleme hatası!"); }
+        error: function () { alert("Güncelleme hatası!"); }
     });
 }
 
@@ -380,7 +379,7 @@ function musteriKampanyaListele() {
 // --- Ödeme İşlemleri ---
 function odemeEkle() {
     var veri = $("#odemeForm").serialize();
-    $.post("islem.php?islem=odeme_ekle", veri, function(yanit) {
+    $.post("islem.php?islem=odeme_ekle", veri, function (yanit) {
         alert(yanit);
         odemeListele();
     });
@@ -392,7 +391,7 @@ function odemeListele() {
 
 function odemeSil(id) {
     if (confirm("Bu ödeme kaydını silmek?")) {
-        $.get("islem.php?islem=odeme_sil&id=" + id, function(yanit) {
+        $.get("islem.php?islem=odeme_sil&id=" + id, function (yanit) {
             alert(yanit);
             odemeListele();
         });
@@ -426,10 +425,10 @@ function dinamikSaatYukle() {
     if (!sahaId) return;
     $.ajax({
         url: 'islem.php?islem=zaman_dilimleri_getir&saha_id=' + sahaId,
-        success: function(data) {
+        success: function (data) {
             document.getElementById('saat').innerHTML = data;
         },
-        error: function() { /* sessizce devam et, mevcut seçenekler kalx */ }
+        error: function () { /* sessizce devam et, mevcut seçenekler kalx */ }
     });
 }
 
